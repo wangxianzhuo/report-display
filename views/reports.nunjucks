@@ -1,0 +1,7 @@
+{% extends 'views/layout.nunjucks' %}
+
+{% block content %}
+    {% for report in reports %}
+    <a href="/report/{{ report.id }}">{{ report.station_id }}</a>
+    {% endfor %}
+{% endblock %}
